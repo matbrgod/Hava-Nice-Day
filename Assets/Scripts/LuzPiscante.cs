@@ -21,6 +21,10 @@ public class LuzPiscante : MonoBehaviour
     [SerializeField] private float tamanhoMinimo;
     [SerializeField] private float tamanhoVelocidade;
 
+    //Luz curto circuito
+    [SerializeField] private bool curtoCircuito = false;
+    private bool desligada = false;
+
 
     void Start()
     {
@@ -32,6 +36,7 @@ public class LuzPiscante : MonoBehaviour
     {
         StartCoroutine(LuzPiscando());
         LanternaFalhando();
+        falhaEletrica();
     }
 
     private IEnumerator LuzPiscando()
@@ -96,6 +101,24 @@ public class LuzPiscante : MonoBehaviour
                     }
                 
                 }
+            }
+        }
+    }
+
+    private void falhaEletrica()
+    {
+        if(curtoCircuito == true)
+        {
+            if (desligada = true)
+            {
+                luz.enabled = true;
+                desligada = false;
+            }
+            float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9.
+            if (chance <= 0)
+            {
+                luz.enabled = false;
+                desligada = true;
             }
         }
     }

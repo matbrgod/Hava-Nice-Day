@@ -8,7 +8,7 @@ public class BossPatrol : MonoBehaviour
     public float speed;
     public int healthEnemy;
     public int maxHealthEnemy;
-    private bool atacar = false;
+    [SerializeField] private bool atacar = false;
     public GameObject player;
     [SerializeField] private ParticleSystem sangue;
     private ParticleSystem sangueParticleSystemInstance;
@@ -24,6 +24,9 @@ public class BossPatrol : MonoBehaviour
     [SerializeField] private GameObject quest1;
     //[SerializeField] private AudioSource musicaAmbiente;
     public GameObject quest;
+
+    //chance de atacar
+    private int chanceDeAtacar = 1;
 
     void Start()
     {
@@ -58,10 +61,13 @@ public class BossPatrol : MonoBehaviour
     void IncreaseTargetInt()
     {
         targetPoint++;
+        float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9. If 0, 1, or 2, then true.
+        if (chance <= chanceDeAtacar)
+            atacar = true;
         if (targetPoint >= patrolPoints.Length)
         {
-            atacar = true;
             targetPoint = 0;
+            chanceDeAtacar += 1;
         }
     }
 
