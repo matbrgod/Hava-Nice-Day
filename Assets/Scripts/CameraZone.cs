@@ -17,8 +17,11 @@ public class CameraZone : MonoBehaviour
     public GameObject quest0;
     public GameObject quest01;
     public Enemy enemy;
+    public BossPatrol bossPatrol;
+    public Animator animator;
     public BossIgreja bossIgreja; // Na BossIgreja a batalha começa no fim da cutscene
     [SerializeField] private bool pararMusica = false;
+    [SerializeField] private bool Destroir = false;
 
     private void Start()
     {
@@ -63,6 +66,8 @@ public class CameraZone : MonoBehaviour
         if (player != null) player.canAttack = true;
         FindObjectOfType<Player>().moveSpeed = 5f;
         if(bossIgreja != null) bossIgreja.HoraDoDuelo();
-        Destroy(this.gameObject);
+        if (bossPatrol != null) bossPatrol.enabled = true;
+        if (animator != null) animator.enabled = true;
+        if (Destroir) Destroy(gameObject);
     }
 }
