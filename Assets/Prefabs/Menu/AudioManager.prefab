@@ -205,6 +205,17 @@ MonoBehaviour:
   - groupID: Picaretada
     clips:
     - {fileID: 8300000, guid: 97a0ffd13af804642973356a5f3ce6dd, type: 3}
+  - groupID: HavaHit
+    clips:
+    - {fileID: 8300000, guid: b1903be3c07bf92419af92e52eab5c96, type: 3}
+    - {fileID: 8300000, guid: 190d061be869a0848957d2932640d215, type: 3}
+    - {fileID: 8300000, guid: 4dd9acee0579b5144a9f68ce2be00342, type: 3}
+    - {fileID: 8300000, guid: d479ebb52c4efdb429d47bbc411efc89, type: 3}
+    - {fileID: 8300000, guid: 3fc7e1f4186fef848a2ab2078c51af85, type: 3}
+    - {fileID: 8300000, guid: 6cbdc463b007e384eb655effd894fed7, type: 3}
+    - {fileID: 8300000, guid: 9074c5d4598d3b94d8bfd9a2d432fff4, type: 3}
+    - {fileID: 8300000, guid: 0e463a4e5873049459aea88e6e4dcf15, type: 3}
+    - {fileID: 8300000, guid: e93bb0dde72a7d34da4dc401991717a0, type: 3}
 --- !u!114 &5327788985294859724
 MonoBehaviour:
   m_ObjectHideFlags: 0
