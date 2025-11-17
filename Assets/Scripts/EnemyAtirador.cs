@@ -221,7 +221,7 @@ public class EnemyAtirador : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") | collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
             arma.SetActive(true);

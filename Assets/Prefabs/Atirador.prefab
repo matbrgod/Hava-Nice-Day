@@ -426,7 +426,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 6
+  m_Radius: 4
 --- !u!114 &7213109338461693924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +468,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   arma: {fileID: 6191654634127629354}
+  enemyAtiradorAnimator: {fileID: 0}
+  walkThreshold: 0.3
 --- !u!195 &101830273411870774
 NavMeshAgent:
   m_ObjectHideFlags: 0

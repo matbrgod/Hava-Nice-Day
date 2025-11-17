@@ -1,11 +1,16 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System.Collections;
 
 
 public class LuzPiscante : MonoBehaviour
 {
     public Light2D luz;
     private bool aumentando = false;
+    [SerializeField] private bool esperar = false;
+    [SerializeField] private float esperarQuantoTempo;
+    [SerializeField] private float minimo;
+    [SerializeField] private float maximo;
     [SerializeField] private float velocidade;
 
     void Start()
@@ -17,19 +22,25 @@ public class LuzPiscante : MonoBehaviour
 
     void Update()
     {
+        StartCoroutine(LuzPiscando());
+    }
+
+    private IEnumerator LuzPiscando()
+    {
         if (!aumentando)
         {
             luz.intensity -= velocidade * Time.deltaTime;
-            if (luz.intensity <= 0.0f)
+            if (luz.intensity <= minimo)
             {
-                luz.intensity = 0.0f;
+                luz.intensity = minimo;
+                yield return new WaitForSeconds(esperarQuantoTempo);
                 aumentando = true;
             }
         }
         else
         {
             luz.intensity += velocidade * Time.deltaTime;
-            if (luz.intensity >= 2f)
+            if (luz.intensity >= maximo)
             {
                 aumentando = false;
             }
