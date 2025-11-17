@@ -12,6 +12,8 @@ TagManager:
   - rato
   - fio
   - Item
+  - Boss
+  - Lanterna
   layers:
   - Default
   - TransparentFX

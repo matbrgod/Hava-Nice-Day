@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
                 if (collision.collider.CompareTag("Enemy"))
                 {
                     healthPlayer -= 10; // Diminui 10 de vida
+                    SoundManager.Instance.PlaySound2D("HavaHit");
                     SpawnParticlesSangue();
                     healthText.text = "" + healthPlayer;
                     

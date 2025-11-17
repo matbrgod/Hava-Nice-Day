@@ -60,9 +60,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7614107677649606468}
   - component: {fileID: 4508672479872990364}
+  - component: {fileID: 6236063992762665590}
   m_Layer: 6
   m_Name: Lanterna
-  m_TagString: Untagged
+  m_TagString: Lanterna
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +135,60 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!60 &6236063992762665590
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156827343885666716}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.7318255, y: 5.1349483}
+      - {x: -0.0060742255, y: 5.428391}
+      - {x: -1.7871671, y: 5.130321}
+      - {x: -3.3692577, y: 4.1805105}
+      - {x: 0.0029594302, y: 0.009714965}
+      - {x: 1.4740952, y: 1.8132157}
+      - {x: 3.3933082, y: 4.1883636}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3456507603611567090
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +898,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7938646717110851491, guid: 1b4677bfd7cd53a4c96de0d35692411d, type: 3}
       insertIndex: -1
       addedObject: {fileID: -3339500358174958256}
+    - targetCorrespondingSourceObject: {fileID: 7938646717110851491, guid: 1b4677bfd7cd53a4c96de0d35692411d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1422594685482637563}
   m_SourcePrefab: {fileID: 100100000, guid: 1b4677bfd7cd53a4c96de0d35692411d, type: 3}
 --- !u!4 &3322170082549752292 stripped
 Transform:
@@ -893,6 +951,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2811980e4ce4a804e843766e4c748b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1422594685482637563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974784362447125391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4630f5fbe4db39a47ba6ec1a82411485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanternaFalhando: 0
+  light2D: {fileID: 4508672479872990364}
+  lanterna: {fileID: 3156827343885666716}
 --- !u!1001 &8045567716203329940
 PrefabInstance:
   m_ObjectHideFlags: 0

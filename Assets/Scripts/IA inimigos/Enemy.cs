@@ -135,6 +135,7 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
+        agent.autoBraking = false;
         agent.destination = player.transform.position;
         if (distance > distanceBetween)
         {
@@ -194,7 +195,7 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //Se O Player ou Tiro do Player entrar na área de Agro do Inimigo ele vai perceber
-        if (collision.CompareTag("Player") | collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
         }

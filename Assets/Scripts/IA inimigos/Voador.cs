@@ -11,11 +11,15 @@ public class Voador : MonoBehaviour
     public float healthEnemy;
     public float maxHealhtEnemy = 30;
     public float timer1;
+    private Renderer rend;
+    private Color corOriginal;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         healthEnemy = maxHealhtEnemy;
         player = GameObject.FindGameObjectWithTag("Player");
+        if (rend != null)
+            corOriginal = rend.material.color;
     }
 
     // Update is called once per frame
@@ -96,12 +100,20 @@ public class Voador : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthEnemy -= damage;
+        StartCoroutine(Piscar());
         if (healthEnemy <= 0)
         {
             Destroy(gameObject);
         }
     }
-    
+
+    private IEnumerator Piscar()
+    {
+        rend.material.color = Color.red;
+        yield return new WaitForSeconds(0.3f);
+        rend.material.color = corOriginal;
+    }
+
     /*void Timer(tempo)
     {
         timer1 -= tempo * Time.deltaTime

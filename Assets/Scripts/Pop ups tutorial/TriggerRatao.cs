@@ -13,19 +13,20 @@ public class TriggerRatao : MonoBehaviour
         
         if (objectThatStayed.CompareTag("Player"))
         {
-            if (animacao != null && !animacao.activeSelf)
-            {
-                animacao.SetActive(true);
-                StartCoroutine(ActivateTriggerWithDelay());
-            }
-            if(SpawnerRatinhos != null)
-                SpawnerRatinhos.SetActive(true);
-            
+            StartCoroutine(Animacao());
         }
     }
 
-    private IEnumerator ActivateTriggerWithDelay()
+    private IEnumerator Animacao()
     {
+        yield return new WaitForSeconds(4f);
+        if (animacao != null && !animacao.activeSelf)
+        {
+            animacao.SetActive(true);
+            //StartCoroutine(ActivateTriggerWithDelay());
+        }
+        if (SpawnerRatinhos != null)
+            SpawnerRatinhos.SetActive(true);
         yield return new WaitForSeconds(1f);
         if (vidaDoBoss != null)
         {
@@ -34,4 +35,6 @@ public class TriggerRatao : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Object.Destroy(this.gameObject);
     }
+
+    
 }

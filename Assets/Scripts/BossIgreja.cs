@@ -68,6 +68,9 @@ public class BossIgreja : MonoBehaviour
     public GameObject vidaDoBoss;
     public GameObject quest; //barra de quest desabilita no fim da batalha
 
+    //luzes
+    public GameObject luzes;
+
     void Start()
     {
         camera = Camera.main;
@@ -342,6 +345,7 @@ public class BossIgreja : MonoBehaviour
         detectado = true;
         arma.SetActive(true);
         Destroy(cutscene);
+        luzes.SetActive(true);
         circuloDeDeteccao.enabled = false;
         MusicManager.Instance.PlayMusic("BossIgreja");
     }
