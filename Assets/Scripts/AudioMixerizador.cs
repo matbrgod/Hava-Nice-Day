@@ -33,7 +33,11 @@ public class AudioMixerizador : MonoBehaviour
 
     public void LoadVolume()
     {
-        musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
-        sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+        if(musicSlider != null)
+            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        if(sfxSlider != null)
+            sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+        audioMixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume"));
+        audioMixer.SetFloat("SFXVolume", PlayerPrefs.GetFloat("SFXVolume"));
     }
 }

@@ -43,7 +43,8 @@ public class CameraZone : MonoBehaviour
         quest0.SetActive(false);
         if (pararMusica)
             MusicManager.Instance.PlayMusic("Parar");
-        luzes.SetActive(true);
+        if (luzes != null)
+            luzes.SetActive(true);
         if (enemy != null)
             enemy.enemyAnimator.SetBool("IsEating", true);
         var player = FindObjectOfType<Player>();

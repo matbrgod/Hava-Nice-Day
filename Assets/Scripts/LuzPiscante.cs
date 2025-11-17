@@ -7,6 +7,7 @@ public class LuzPiscante : MonoBehaviour
 {
     public Light2D luz;
     private bool aumentando = false;
+    private bool aumentando2 = false;
     [SerializeField] private bool aumentar = true;
     [SerializeField] private bool diminuir = true;
     [SerializeField] private float esperarQuantoTempo;
@@ -14,23 +15,30 @@ public class LuzPiscante : MonoBehaviour
     [SerializeField] private float maximo;
     [SerializeField] private float velocidade;
 
+    //luz muda de tamanho
+    [SerializeField] private bool tamanhoMuda = false;
+    [SerializeField] private float tamanhoMaximo;
+    [SerializeField] private float tamanhoMinimo;
+    [SerializeField] private float tamanhoVelocidade;
+
+
     void Start()
     {
         if (luz == null)
             luz = GetComponent<Light2D>();
-        //velocidade = 4f;
     }
 
     void Update()
     {
         StartCoroutine(LuzPiscando());
+        LanternaFalhando();
     }
 
     private IEnumerator LuzPiscando()
     {
-        if (!aumentando)
+        if (aumentando == false)
         {
-            if(diminuir)
+            if(diminuir == true)
             {
                 luz.intensity -= velocidade * Time.deltaTime;
                 if (luz.intensity <= minimo)
@@ -40,14 +48,15 @@ public class LuzPiscante : MonoBehaviour
                     aumentando = true;
                 }
             }
-            if(!diminuir)
-                aumentando = true;
+            if(diminuir == false)
+               aumentando = true;
         }
         else
         {
 
-            if(aumentar)
+            if(aumentar == true)
             {
+                aumentando = true;
                 luz.intensity += velocidade * Time.deltaTime;
                 if (luz.intensity >= maximo)
                 {
@@ -56,8 +65,38 @@ public class LuzPiscante : MonoBehaviour
                     aumentando = false;
                 }
             }
-            if (aumentar)
-                aumentando = false;
+            //if (aumentar == true)
+            //    aumentando = false;
+        }
+    }
+
+    public void LanternaFalhando()
+    {
+        if (tamanhoMuda)
+        {
+            if (aumentando2 == true)
+            {
+                if (luz != null)
+                {
+                    luz.pointLightOuterRadius -= tamanhoVelocidade * Time.deltaTime;
+                    if (luz.pointLightOuterRadius <= tamanhoMinimo)
+                    {
+                        aumentando2 = false;
+                    }
+                }
+            }
+            if (aumentando2 == false)
+            {
+                if(luz != null)
+                {
+                    luz.pointLightOuterRadius += tamanhoVelocidade * Time.deltaTime;
+                    if (luz.pointLightOuterRadius >= tamanhoMaximo)
+                    {
+                        aumentando2 = true;
+                    }
+                
+                }
+            }
         }
     }
 }
