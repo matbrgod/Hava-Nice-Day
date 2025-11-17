@@ -7,7 +7,8 @@ public class LuzPiscante : MonoBehaviour
 {
     public Light2D luz;
     private bool aumentando = false;
-    [SerializeField] private bool esperar = false;
+    [SerializeField] private bool aumentar = true;
+    [SerializeField] private bool diminuir = true;
     [SerializeField] private float esperarQuantoTempo;
     [SerializeField] private float minimo;
     [SerializeField] private float maximo;
@@ -29,21 +30,34 @@ public class LuzPiscante : MonoBehaviour
     {
         if (!aumentando)
         {
-            luz.intensity -= velocidade * Time.deltaTime;
-            if (luz.intensity <= minimo)
+            if(diminuir)
             {
-                luz.intensity = minimo;
-                yield return new WaitForSeconds(esperarQuantoTempo);
-                aumentando = true;
+                luz.intensity -= velocidade * Time.deltaTime;
+                if (luz.intensity <= minimo)
+                {
+                    luz.intensity = minimo;
+                    yield return new WaitForSeconds(esperarQuantoTempo);
+                    aumentando = true;
+                }
             }
+            if(!diminuir)
+                aumentando = true;
         }
         else
         {
-            luz.intensity += velocidade * Time.deltaTime;
-            if (luz.intensity >= maximo)
+
+            if(aumentar)
             {
-                aumentando = false;
+                luz.intensity += velocidade * Time.deltaTime;
+                if (luz.intensity >= maximo)
+                {
+                    luz.intensity = maximo;
+                    yield return new WaitForSeconds(esperarQuantoTempo);
+                    aumentando = false;
+                }
             }
+            if (aumentar)
+                aumentando = false;
         }
     }
 }

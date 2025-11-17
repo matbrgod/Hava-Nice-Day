@@ -23,6 +23,9 @@ public class CameraZone : MonoBehaviour
     [SerializeField] private bool pararMusica = false;
     [SerializeField] private bool Destroir = false;
 
+    //luzes
+    public GameObject luzes;
+
     private void Start()
     {
         if (cameraFollow == null)
@@ -40,7 +43,8 @@ public class CameraZone : MonoBehaviour
         quest0.SetActive(false);
         if (pararMusica)
             MusicManager.Instance.PlayMusic("Parar");
-        if(enemy != null)
+        luzes.SetActive(true);
+        if (enemy != null)
             enemy.enemyAnimator.SetBool("IsEating", true);
         var player = FindObjectOfType<Player>();
         if (player != null) player.canAttack = false;
