@@ -9,9 +9,6 @@ public class Lanterna : MonoBehaviour
     public void Fire()
     {
         Vector2 fireDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - firePoint1.position).normalized;
-        
-        
-        
     }
     // Update is called once per frame
     void Update()

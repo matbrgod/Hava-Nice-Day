@@ -10,7 +10,7 @@ public class LanternaHava : MonoBehaviour
     public GameObject lanterna;
     void Start()
     {
-        light2D = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        
     }
 
     // Update is called once per frame
@@ -20,29 +20,35 @@ public class LanternaHava : MonoBehaviour
         {
             lanterna.SetActive(!lanterna.activeSelf);
         }
-        /*if (lanternaFalhando == true)
+        if (lanternaFalhando == true)
         {
             LanternaFalhando();
-        }*/
+        }
     }
 
-    /*public void LanternaFalhando()
+    public void LanternaFalhando()
     {
         if (aumentando == true)
         {
-            light2D.pointLightOuterRadius -= 0.1f * Time.deltaTime;
-            if (light2D.pointLightOuterRadius <= 5f)
+            if (light2D != null)
+            {
+                light2D.pointLightOuterRadius -= 0.1f * Time.deltaTime;
+                if (light2D.pointLightOuterRadius <= 5f)
                 {
                     aumentando = false;
                 }
+            }
         }
         if (aumentando == false)
         {
-            light2D.pointLightOuterRadius += 0.5f * Time.deltaTime;
-            if (light2D.pointLightOuterRadius >= 11.3f)
+            if(light2D != null)
+            {
+                light2D.pointLightOuterRadius += 0.5f * Time.deltaTime;
+                if (light2D.pointLightOuterRadius >= 11.3f)
                 {
                     aumentando = true;
                 }
+            }
         }
-    }*/
+    }
 }

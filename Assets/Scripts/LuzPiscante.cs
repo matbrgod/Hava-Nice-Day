@@ -12,7 +12,7 @@ public class LuzPiscante : MonoBehaviour
     {
         if (luz == null)
             luz = GetComponent<Light2D>();
-        velocidade = 4f;
+        //velocidade = 4f;
     }
 
     void Update()
