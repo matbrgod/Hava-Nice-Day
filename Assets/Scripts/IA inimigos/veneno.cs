@@ -10,11 +10,11 @@ public class veneno : MonoBehaviour
         Destroy(gameObject, tempoDeVida);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // Supondo que o player tenha um método chamado "LevarDano"
+            // Supondo que o player tenha um mï¿½todo chamado "LevarDano"
             other.SendMessage("LevarDano", dano, SendMessageOptions.DontRequireReceiver);
         }
     }
