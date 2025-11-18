@@ -19,7 +19,9 @@ public class MenuController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             menuCanvas.SetActive(!menuCanvas.activeSelf);
-            qHud.SetActive(false);
+            
+            if(qHud != null)
+                qHud.SetActive(false);
         }
     }
 }

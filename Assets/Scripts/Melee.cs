@@ -20,10 +20,10 @@ public class Melee : MonoBehaviour
         TryDealDamage(collision);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        TryDealDamage(collision);
-    }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    TryDealDamage(collision);
+    //}
 
     private void TryDealDamage(Collider2D collision)
     {
