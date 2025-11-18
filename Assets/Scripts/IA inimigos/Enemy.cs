@@ -31,6 +31,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private ParticleSystem sangue;
     private ParticleSystem sangueParticleSystemInstance;
 
+    //area segura
+    [SerializeField] private GameObject areasseguras;
+
     
     void Start()
     {
@@ -135,7 +138,7 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
-        agent.autoBraking = false;
+        //agent.autoBraking = false;
         agent.destination = player.transform.position;
         if (distance > distanceBetween)
         {
@@ -157,7 +160,7 @@ public class Enemy : MonoBehaviour
     
     private void Atacar()
     {
-        //O inimigo ata uma area próxima para causar dano
+        //O inimigo ataca uma area próxima para causar dano
     }
 
     public void TakeDamage(float damage)
@@ -198,6 +201,10 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
+        }
+        if (collision.CompareTag("Area Segura"))
+        {
+            detectado = false;
         }
     }
 }
