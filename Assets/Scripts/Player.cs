@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public float timerTiro = 0f;
     public float tiroCooldown = 1f;
  
-    Vector2 moveDirection;
+    public Vector2 moveDirection;
 
     Vector2 mousePosition;
     public WeaponParent WeaponParent;
