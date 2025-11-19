@@ -31,6 +31,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private ParticleSystem sangue;
     private ParticleSystem sangueParticleSystemInstance;
 
+    //area segura
+    //[SerializeField] private GameObject areasseguras;
+    //public Player playerScript;
+
     
     void Start()
     {
@@ -87,6 +91,12 @@ public class Enemy : MonoBehaviour
         else if (direction.x < 0)
             transform.rotation = Quaternion.Euler(0, 0, 0);  // Facing left
 
+        //if (playerScript != null && playerScript.seguro == true)
+        //{
+        //    detectado = false;
+        //    patrulhando = true;
+        //}
+        
         if (detectado == false)
         {
             //Se o Player não for detectado o inimigo patrulha
@@ -135,7 +145,7 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
-        agent.autoBraking = false;
+        //agent.autoBraking = false;
         agent.destination = player.transform.position;
         if (distance > distanceBetween)
         {
@@ -157,7 +167,7 @@ public class Enemy : MonoBehaviour
     
     private void Atacar()
     {
-        //O inimigo ata uma area próxima para causar dano
+        //O inimigo ataca uma area próxima para causar dano
     }
 
     public void TakeDamage(float damage)
@@ -186,10 +196,10 @@ public class Enemy : MonoBehaviour
             TakeDamage(1f);
         }
 
-        if(collision.collider.CompareTag("Player"))
-        {
-            //Se o inimigo bater no payer o inimigo recua um pouco
-        }
+        //if(collision.collider.CompareTag("Player"))
+        //{
+        //    //Se o inimigo bater no payer o inimigo recua um pouco
+        //}
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -199,5 +209,10 @@ public class Enemy : MonoBehaviour
         {
             detectado = true;
         }
+        //if (collision.CompareTag("Area Segura"))
+        //{
+        //    detectado = false;
+        //    patrulhando = true;
+        //}
     }
 }

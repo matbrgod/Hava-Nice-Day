@@ -46,8 +46,11 @@ public class Player : MonoBehaviour
     private ParticleSystem sangueParticleSystemInstance;
 
     //Som de Caminhada
-    [SerializeField] private AudioSource caminhada;
+    //[SerializeField] private AudioSource caminhada;
 
+    //public bool seguro = false; //area segura
+
+    
     void Awake()
     {
         if (instance != null)
@@ -66,7 +69,7 @@ public class Player : MonoBehaviour
         originalMoveSpeed = moveSpeed;
         healthText.text = "" + healthPlayer;
         isInvincible = false;
-        caminhada = GetComponent<AudioSource>();
+        //caminhada = GetComponent<AudioSource>();
 
         int enemyLayer = LayerMask.NameToLayer("Enemy");
         if (enemyLayer != -1)
@@ -142,7 +145,7 @@ public class Player : MonoBehaviour
                 {
                     healthPlayer -= 10; // Diminui 10 de vida
                     SoundManager.Instance.PlaySound2D("HavaHit");
-                    SpawnParticlesSangue();
+                    sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
                     healthText.text = "" + healthPlayer;
                     
                     
@@ -174,7 +177,6 @@ public class Player : MonoBehaviour
             }
             triggerTickTimer = 0f;
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -183,6 +185,8 @@ public class Player : MonoBehaviour
         {
             moveSpeed = 2f;
         }
+        //if (other.CompareTag("AreaSegura"))
+        //    seguro = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -191,6 +195,8 @@ public class Player : MonoBehaviour
         {
             moveSpeed = originalMoveSpeed;
         }
+        //if (other.CompareTag("AreaSegura"))
+        //    seguro = false;
     }
 
     private IEnumerator InvincibilityCoroutine()
@@ -248,12 +254,5 @@ public class Player : MonoBehaviour
         //Vector2 aimDirection = mousePosition - rb.position;
         //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         // rb.rotation = aimAngle;
-       
-
-    }
-
-    void SpawnParticlesSangue()
-    {
-        sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
     }
 }
