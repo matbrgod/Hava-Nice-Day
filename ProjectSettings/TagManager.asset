@@ -14,7 +14,7 @@ TagManager:
   - Item
   - Boss
   - Lanterna
-  - Area Segura
+  - AreaSegura
   layers:
   - Default
   - TransparentFX

@@ -61,7 +61,8 @@ public class BossPatrol : MonoBehaviour
     void IncreaseTargetInt()
     {
         targetPoint++;
-        float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9. If 0, 1, or 2, then true.
+        float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9.
+        float speed = UnityEngine.Random.Range(8, 11); // Returns 8-11.
         if (chance <= chanceDeAtacar)
             atacar = true;
         if (targetPoint >= patrolPoints.Length)
