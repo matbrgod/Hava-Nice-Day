@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering.Universal;
 
 public class NpcDialogue : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class NpcDialogue : MonoBehaviour
     public GameObject questOnHud;
     public GameObject questOffHud;
     public Animator painelAnimator;
+
+    public GameObject cutscene; // cutscene depois do dialogo
+    public GameObject luzCamera; // liga luz da camera pra não ficar tão escuro
    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,6 +68,9 @@ public class NpcDialogue : MonoBehaviour
                 startDialogue = false;
                 dialogueIndex = 0;
                 FindObjectOfType<Player>().moveSpeed = 5f;
+                //Time.timeScale = 1f; // Resume the game
+                if (cutscene != null)
+                    cutscene.SetActive(true);
 
             }
         }
@@ -76,7 +83,7 @@ public class NpcDialogue : MonoBehaviour
             dialogueIndex = 0;
             dialoguePanel.SetActive(true);
             FindObjectOfType<Player>().moveSpeed = 0f;
-
+            //Time.timeScale = 0f; // Pause the game
             StartCoroutine(ShowDialogue());
         }
 

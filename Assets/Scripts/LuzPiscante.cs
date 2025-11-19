@@ -114,7 +114,7 @@ public class LuzPiscante : MonoBehaviour
                 luz.enabled = true;
                 desligada = false;
             }
-            float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9.
+            float chance = UnityEngine.Random.Range(0, 20); // Returns 0-19.
             if (chance <= 0)
             {
                 luz.enabled = false;
