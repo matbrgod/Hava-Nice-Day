@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     public Transform[] pontos; // Adicione aqui os pontos no inspetor
     public float velocidade = 1.5f;
     public float tempoEspera = 2f;
+    public Player player;
 
     private int indiceAtual = 0;
     private float tempoParado = 0f;
@@ -32,6 +33,8 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
+        //
+        //offset = (1.4f) * player.moveDirection;
         // If camera is locked (cutscene/pan), move directly toward lockedPosition and don't run patrol path
         if (isLocked)
         {

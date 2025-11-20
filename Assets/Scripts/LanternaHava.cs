@@ -33,7 +33,7 @@ public class LanternaHava : MonoBehaviour
             if (light2D != null)
             {
                 light2D.pointLightOuterRadius -= 0.1f * Time.deltaTime;
-                if (light2D.pointLightOuterRadius <= 5f)
+                if (light2D.pointLightOuterRadius <= 3f)
                 {
                     aumentando = false;
                 }
@@ -43,8 +43,8 @@ public class LanternaHava : MonoBehaviour
         {
             if(light2D != null)
             {
-                light2D.pointLightOuterRadius += 0.5f * Time.deltaTime;
-                if (light2D.pointLightOuterRadius >= 11.3f)
+                light2D.pointLightOuterRadius += 0.1f * Time.deltaTime;
+                if (light2D.pointLightOuterRadius >= 4.8f)
                 {
                     aumentando = true;
                 }
