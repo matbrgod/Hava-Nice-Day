@@ -136,7 +136,7 @@ MonoBehaviour:
   tempoDeESpera: 2
   walkThreshold: 0.05
   PatrolPoints: []
-  sangue: {fileID: 0}
+  sangue: {fileID: 4897215281484936675, guid: 77d731ffc0fe3e24789893ccd9195464, type: 3}
 --- !u!61 &1036273093148684099
 BoxCollider2D:
   m_ObjectHideFlags: 0

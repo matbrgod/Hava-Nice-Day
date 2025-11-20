@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     private ParticleSystem sangueParticleSystemInstance;
 
     //Som de Caminhada
-    //[SerializeField] private AudioSource caminhada;
+    [SerializeField] private AudioSource caminhada;
 
     //public bool seguro = false; //area segura
 
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
         originalMoveSpeed = moveSpeed;
         healthText.text = "" + healthPlayer;
         isInvincible = false;
-        //caminhada = GetComponent<AudioSource>();
+        caminhada = GetComponent<AudioSource>();
 
         int enemyLayer = LayerMask.NameToLayer("Enemy");
         if (enemyLayer != -1)
@@ -85,13 +85,14 @@ public class Player : MonoBehaviour
 
         if (moveX != 0 || moveY != 0)
         {
+            caminhada.enabled = true;
             animator.SetBool("EstaAndando", true);
-            //tocar som de caminhada 1 vez
-            //StartCoroutine(PlayAudioAndContinue());
         }
         else
+        {
+            caminhada.enabled = false;
             animator.SetBool("EstaAndando", false);
-
+        }
         if (healthPlayer <= 0)
         {
             SceneManager.LoadScene("Game Over");
@@ -219,12 +220,6 @@ public class Player : MonoBehaviour
         isInvincible = false;
         if (spriteRenderer != null) spriteRenderer.color = Color.white;
     }
-
-    /*private IEnumerator EfeitoTiroCoroutine()
-    {
-        yield return new WaitForSeconds(0.2f);
-        efeitoTiro.SetActive(false);
-    }*/
 
     private void OnDisable()
     {
