@@ -25,6 +25,7 @@ public class CameraZone : MonoBehaviour
 
     //luzes
     public GameObject luzes;
+    public GameObject luzCamera;
 
     private void Start()
     {
@@ -45,6 +46,8 @@ public class CameraZone : MonoBehaviour
             MusicManager.Instance.PlayMusic("Parar");
         if (luzes != null)
             luzes.SetActive(true);
+        if (luzCamera != null)
+            luzCamera.SetActive(true);
         if (enemy != null)
             enemy.enemyAnimator.SetBool("IsEating", true);
         var player = FindObjectOfType<Player>();
@@ -67,6 +70,8 @@ public class CameraZone : MonoBehaviour
             quest01.SetActive(true);
         if (enemy != null)
             enemy.enemyAnimator.SetBool("IsEating", false);
+        if (luzCamera != null)
+            luzCamera.SetActive(false);
         var player = FindObjectOfType<Player>();
         if (player != null) player.canAttack = true;
         FindObjectOfType<Player>().moveSpeed = 5f;

@@ -145,7 +145,7 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
-        //agent.autoBraking = false;
+        agent.autoBraking = false;
         agent.destination = player.transform.position;
         if (distance > distanceBetween)
         {

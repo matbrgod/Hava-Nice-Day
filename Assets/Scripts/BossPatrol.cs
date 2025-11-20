@@ -22,7 +22,8 @@ public class BossPatrol : MonoBehaviour
     [SerializeField] private GameObject spawnRatinhos;
     [SerializeField] private GameObject musica;
     [SerializeField] private GameObject quest1;
-    //[SerializeField] private AudioSource musicaAmbiente;
+    [SerializeField] private GameObject alarme;
+    [SerializeField] private GameObject luzAlarme;
     public GameObject quest;
 
     //chance de atacar
@@ -61,14 +62,14 @@ public class BossPatrol : MonoBehaviour
     void IncreaseTargetInt()
     {
         targetPoint++;
-        float chance = UnityEngine.Random.Range(0, 10); // Returns 0-9.
-        float speed = UnityEngine.Random.Range(8, 11); // Returns 8-11.
+        float chance = UnityEngine.Random.Range(0, 20); // Returns 0-19.
         if (chance <= chanceDeAtacar)
             atacar = true;
         if (targetPoint >= patrolPoints.Length)
         {
             targetPoint = 0;
-            chanceDeAtacar += 1;
+            //if (chanceDeAtacar < 3)
+            //    chanceDeAtacar += 1;
         }
     }
 
@@ -99,7 +100,8 @@ private void Die()
     MusicManager.Instance.PlayMusic("CavernaTensa");
     if (quest != null) quest.SetActive(true); else Debug.Log("quest is null");
     if (quest1 != null) quest1.SetActive(false); else Debug.Log("quest1 is null");
-
+    if (alarme != null) alarme.SetActive(false);
+    if (luzAlarme != null) luzAlarme.SetActive(false);
 
     Destroy(gameObject);
 }
