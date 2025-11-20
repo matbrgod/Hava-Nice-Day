@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c1fa3054dd4ddfa49b5ab00a8db728e1, type: 3}
+  m_Sprite: {fileID: 4492516396633036932, guid: 535d27b58380cf54a9505f1e37326daf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   objetoADrop: {fileID: 5306594900383082984, guid: e6920a38c3e753b4cbcbfee5e43b5ba0, type: 3}
   vidaMaxima: 3
   vidaAtual: 0
-  pedras: {fileID: 0}
+  pedras: {fileID: 3562851131366870989, guid: 3e12c56959c939946b0214f5c410edde, type: 3}
   barraDeVida: {fileID: 0}
 --- !u!210 &-9062384563130428182
 SortingGroup:
@@ -224,7 +224,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
+    oldSize: {x: 3.1875, y: 3.59375}
     newSize: {x: 1.02, y: 1.09}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8651268370448604060}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 

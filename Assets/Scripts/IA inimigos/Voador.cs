@@ -18,6 +18,7 @@ public class Voador : MonoBehaviour
     {
         healthEnemy = maxHealhtEnemy;
         player = GameObject.FindGameObjectWithTag("Player");
+        rend = GetComponent<Renderer>();
         if (rend != null)
             corOriginal = rend.material.color;
     }

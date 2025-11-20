@@ -333,6 +333,7 @@ MonoBehaviour:
   maxHealthEnemy: 5
   speed: 6
   player: {fileID: 0}
+  cura: {fileID: 4179862610057288078, guid: d6c1ba49eb6561147a4332a3550ce287, type: 3}
   distanceBetween: 9
   enemyAnimator: {fileID: 0}
   tempoDeESpera: 2

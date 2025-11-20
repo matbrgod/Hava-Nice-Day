@@ -8,6 +8,7 @@ public class PegarArma : MonoBehaviour
     public GameObject quest0;
     public GameObject quest1;
     public GameObject armaUI;
+    public GameObject triggerAttack;
     private bool canPress;
     void Update()
     {
@@ -22,6 +23,7 @@ public class PegarArma : MonoBehaviour
             quest0.SetActive(false);
             quest1.SetActive(true);
             armaUI.SetActive(true);
+            triggerAttack.SetActive(true);
             triggerE.SetActive(false);
             Destroy(gameObject, 0.15f);
         }
