@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public float maxHealthEnemy;
     public float speed;
     public GameObject player;
+    public GameObject cura;
     public float distanceBetween;
     public Animator enemyAnimator;
     private Transform playerPosition;
@@ -178,6 +179,7 @@ public class Enemy : MonoBehaviour
         sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
         if (healthEnemy <= 0)
         {
+            Instantiate(cura, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

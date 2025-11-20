@@ -24,10 +24,11 @@ public class NpcDialogue : MonoBehaviour
     public GameObject armaPlayer;
     public GameObject questOnHud;
     public GameObject questOffHud;
+    public GameObject dialogue;
     public Animator painelAnimator;
 
     public GameObject cutscene; // cutscene depois do dialogo
-    public GameObject luzCamera; // liga luz da camera pra não ficar tão escuro
+    public GameObject luzCamera; // liga luz da camera pra nï¿½o ficar tï¿½o escuro
    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -141,6 +142,9 @@ public class NpcDialogue : MonoBehaviour
                 painelAnimator.SetBool("Ativar", false);
                 painelAnimator.SetBool("Desativar", true);
             }
+
+             if (dialogue != null)
+                dialogue.SetActive(false);
             
             //var player = FindObjectOfType<Player>();
             //if (player != null) player.canAttack = true;

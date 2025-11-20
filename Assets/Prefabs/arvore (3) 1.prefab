@@ -108,7 +108,7 @@ MonoBehaviour:
   objetoADrop: {fileID: 5306594900383082984, guid: e6920a38c3e753b4cbcbfee5e43b5ba0, type: 3}
   vidaMaxima: 3
   vidaAtual: 0
-  pedras: {fileID: 0}
+  pedras: {fileID: 3562851131366870989, guid: 3e12c56959c939946b0214f5c410edde, type: 3}
   barraDeVida: {fileID: 0}
 --- !u!210 &-9062384563130428182
 SortingGroup:
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8651268370448604060}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
