@@ -34,12 +34,15 @@ public class Enemy : MonoBehaviour
 
     //area segura
     [SerializeField] private bool playerSeguro;
-    //public Player playerScript;
+    
+    //audio
+    [SerializeField] private AudioSource audioSource;
 
     
     void Start()
     {
         enemyAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         healthEnemy = maxHealthEnemy;
         player = GameObject.FindWithTag("Player");
@@ -102,6 +105,8 @@ public class Enemy : MonoBehaviour
         {
             //Se o Player não for detectado o inimigo patrulha
             Patrulha();
+            if (audioSource != null)
+                audioSource.enabled = false;
         }
 
         if (PatrolPoints == null || PatrolPoints.Length == 0)
@@ -115,6 +120,8 @@ public class Enemy : MonoBehaviour
             patrulhando = false;
             Perseguindo();
         }
+
+        //StartCoroutine(Barulhos());
     }
 
     private void Patrulha()
@@ -139,6 +146,7 @@ public class Enemy : MonoBehaviour
                     {
                         currentPatrolIndex = (currentPatrolIndex + 1) % PatrolPoints.Length;
                         agent.SetDestination(PatrolPoints[currentPatrolIndex].position);
+                        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
                     }
                 }
             }
@@ -156,6 +164,8 @@ public class Enemy : MonoBehaviour
         {
             agent.autoBraking = false;
             agent.destination = player.transform.position;
+            if(audioSource != null)
+                audioSource.enabled = true;
             if (distance > distanceBetween)
             {
                 //O inimigo vai atrás do player
@@ -183,6 +193,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthEnemy -= damage;
+        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
         if (rend != null)
             StartCoroutine(Piscar());
         sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
@@ -198,6 +209,13 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         rend.material.color = corOriginal;
     }
+
+    /*private IEnumerator Barulhos()
+    {
+        float tempoDeBarulho = UnityEngine.Random.Range(20, 31); // Returns 20-30.
+        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
+        yield return new WaitForSeconds(tempoDeBarulho);
+    }*/
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -219,6 +237,7 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("AreaSegura"))
         {
             playerSeguro = true;
+            SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
         }
         if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
