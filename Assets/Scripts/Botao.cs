@@ -20,6 +20,7 @@ public class Botao : MonoBehaviour
                 porta2.SetActive(true);
 
             triggerE.SetActive(false);
+            SoundManager.Instance.PlaySound3D("BotaoClicado", transform.position);
             Destroy(gameObject, 0.15f);
         }
     }

@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.7071068
       objectReference: {fileID: 0}
+    - target: {fileID: 7620920007743919438, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8735064261416906145, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
       value: 2

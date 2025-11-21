@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
     private ParticleSystem sangueParticleSystemInstance;
 
     //area segura
-    //[SerializeField] private GameObject areasseguras;
+    [SerializeField] private bool playerSeguro;
     //public Player playerScript;
 
     
@@ -146,17 +146,26 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
-        agent.autoBraking = false;
-        agent.destination = player.transform.position;
-        if (distance > distanceBetween)
+        if(playerSeguro == true)
         {
-            //O inimigo vai atrás do player
-            IrAtras();
+            detectado = false;
+            patrulhando = true;
+            return;
         }
-        if (distance <= distanceBetween)
+        else
         {
-            IrAtras();//Por enquanto o bixo vai dar dano encostando mesmo
-            //Atacar();
+            agent.autoBraking = false;
+            agent.destination = player.transform.position;
+            if (distance > distanceBetween)
+            {
+                //O inimigo vai atrás do player
+                IrAtras();
+            }
+            if (distance <= distanceBetween)
+            {
+                IrAtras();//Por enquanto o bixo vai dar dano encostando mesmo
+                //Atacar();
+            }
         }
     }
     private void IrAtras()
@@ -207,6 +216,10 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //Se O Player ou Tiro do Player entrar na área de Agro do Inimigo ele vai perceber
+        if (collision.CompareTag("AreaSegura"))
+        {
+            playerSeguro = true;
+        }
         if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
@@ -216,5 +229,13 @@ public class Enemy : MonoBehaviour
         //    detectado = false;
         //    patrulhando = true;
         //}
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("AreaSegura"))
+        {
+            playerSeguro = false;
+        }
     }
 }

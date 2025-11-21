@@ -875,8 +875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lanternaFalhando: 0
-  light2D: {fileID: 0}
-  lanterna: {fileID: 0}
+  light2D: {fileID: 5791795917186570048}
+  lanterna: {fileID: 2810038136578700140}
 --- !u!82 &1312419382461232851
 AudioSource:
   m_ObjectHideFlags: 0
