@@ -347,6 +347,7 @@ MonoBehaviour:
   PatrolPoints: []
   sangue: {fileID: 4897215281484936675, guid: 77d731ffc0fe3e24789893ccd9195464, type: 3}
   playerSeguro: 0
+  audioSource: {fileID: 0}
 --- !u!58 &8835789812979261910
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -392,7 +393,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2123206131393619592}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 0.1
   m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50

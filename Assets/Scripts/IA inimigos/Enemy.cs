@@ -224,6 +224,11 @@ public class Enemy : MonoBehaviour
         {
             TakeDamage(1f);
         }
+        /*if (collision.collider.CompareTag("Enemy"))
+        {
+            currentPatrolIndex = (currentPatrolIndex + 1) % PatrolPoints.Length;
+            agent.SetDestination(PatrolPoints[currentPatrolIndex].position);
+        }*/
 
         //if(collision.collider.CompareTag("Player"))
         //{
