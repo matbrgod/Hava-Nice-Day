@@ -48,8 +48,6 @@ public class Player : MonoBehaviour
     //Som de Caminhada
     [SerializeField] private AudioSource caminhada;
 
-    //public bool seguro = false; //area segura
-
     
     void Awake()
     {
@@ -186,8 +184,6 @@ public class Player : MonoBehaviour
         {
             moveSpeed = 2f;
         }
-        //if (other.CompareTag("AreaSegura"))
-        //    seguro = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -196,8 +192,6 @@ public class Player : MonoBehaviour
         {
             moveSpeed = originalMoveSpeed;
         }
-        //if (other.CompareTag("AreaSegura"))
-        //    seguro = false;
     }
 
     private IEnumerator InvincibilityCoroutine()

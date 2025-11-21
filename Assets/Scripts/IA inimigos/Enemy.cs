@@ -33,13 +33,16 @@ public class Enemy : MonoBehaviour
     private ParticleSystem sangueParticleSystemInstance;
 
     //area segura
-    //[SerializeField] private GameObject areasseguras;
-    //public Player playerScript;
+    [SerializeField] private bool playerSeguro;
+    
+    //audio
+    [SerializeField] private AudioSource audioSource;
 
     
     void Start()
     {
         enemyAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         healthEnemy = maxHealthEnemy;
         player = GameObject.FindWithTag("Player");
@@ -102,6 +105,8 @@ public class Enemy : MonoBehaviour
         {
             //Se o Player não for detectado o inimigo patrulha
             Patrulha();
+            if (audioSource != null)
+                audioSource.enabled = false;
         }
 
         if (PatrolPoints == null || PatrolPoints.Length == 0)
@@ -115,6 +120,8 @@ public class Enemy : MonoBehaviour
             patrulhando = false;
             Perseguindo();
         }
+
+        //StartCoroutine(Barulhos());
     }
 
     private void Patrulha()
@@ -139,6 +146,7 @@ public class Enemy : MonoBehaviour
                     {
                         currentPatrolIndex = (currentPatrolIndex + 1) % PatrolPoints.Length;
                         agent.SetDestination(PatrolPoints[currentPatrolIndex].position);
+                        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
                     }
                 }
             }
@@ -146,17 +154,28 @@ public class Enemy : MonoBehaviour
     }
     private void Perseguindo()
     {
-        agent.autoBraking = false;
-        agent.destination = player.transform.position;
-        if (distance > distanceBetween)
+        if(playerSeguro == true)
         {
-            //O inimigo vai atrás do player
-            IrAtras();
+            detectado = false;
+            patrulhando = true;
+            return;
         }
-        if (distance <= distanceBetween)
+        else
         {
-            IrAtras();//Por enquanto o bixo vai dar dano encostando mesmo
-            //Atacar();
+            agent.autoBraking = false;
+            agent.destination = player.transform.position;
+            if(audioSource != null)
+                audioSource.enabled = true;
+            if (distance > distanceBetween)
+            {
+                //O inimigo vai atrás do player
+                IrAtras();
+            }
+            if (distance <= distanceBetween)
+            {
+                IrAtras();//Por enquanto o bixo vai dar dano encostando mesmo
+                //Atacar();
+            }
         }
     }
     private void IrAtras()
@@ -174,6 +193,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthEnemy -= damage;
+        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
         if (rend != null)
             StartCoroutine(Piscar());
         sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
@@ -190,6 +210,13 @@ public class Enemy : MonoBehaviour
         rend.material.color = corOriginal;
     }
 
+    /*private IEnumerator Barulhos()
+    {
+        float tempoDeBarulho = UnityEngine.Random.Range(20, 31); // Returns 20-30.
+        SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
+        yield return new WaitForSeconds(tempoDeBarulho);
+    }*/
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Se o inimigo colidir com o tiro do player ele perde vida
@@ -197,6 +224,11 @@ public class Enemy : MonoBehaviour
         {
             TakeDamage(1f);
         }
+        /*if (collision.collider.CompareTag("Enemy"))
+        {
+            currentPatrolIndex = (currentPatrolIndex + 1) % PatrolPoints.Length;
+            agent.SetDestination(PatrolPoints[currentPatrolIndex].position);
+        }*/
 
         //if(collision.collider.CompareTag("Player"))
         //{
@@ -207,6 +239,11 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //Se O Player ou Tiro do Player entrar na área de Agro do Inimigo ele vai perceber
+        if (collision.CompareTag("AreaSegura"))
+        {
+            playerSeguro = true;
+            SoundManager.Instance.PlaySound3D("MonstroDor", transform.position);
+        }
         if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
@@ -216,5 +253,13 @@ public class Enemy : MonoBehaviour
         //    detectado = false;
         //    patrulhando = true;
         //}
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("AreaSegura"))
+        {
+            playerSeguro = false;
+        }
     }
 }
