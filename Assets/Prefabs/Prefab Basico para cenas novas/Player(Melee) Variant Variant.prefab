@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
       value: -620505467
       objectReference: {fileID: 0}
+    - target: {fileID: 1426204576628277614, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -7791071356489104944, guid: fcf0b12101f27b448b430da9e253cff6, type: 2}
+    - target: {fileID: 3156827343885666716, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3564926614065524216, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.3
@@ -73,6 +81,14 @@ PrefabInstance:
       value: -620505467
       objectReference: {fileID: 0}
     - target: {fileID: 4508672479872990364, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508672479872990364, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.836496
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508672479872990364, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -92,6 +108,50 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -620505467
       objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 1.0880853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 3.5700324
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.008170709
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 3.7523274
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -1.2845199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 3.500576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: -2.3394308
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: 2.8816967
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
+      value: 2.3430598
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236063992762665590, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
+      value: 2.8926177
+      objectReference: {fileID: 0}
     - target: {fileID: 6427890044057834473, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -103,6 +163,22 @@ PrefabInstance:
     - target: {fileID: 6427890044057834473, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
       value: -620505467
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614107677649606468, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614107677649606468, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614107677649606468, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614107677649606468, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8735064261416906145, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
@@ -135,6 +211,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3974784362447125391, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       insertIndex: 1
       addedObject: {fileID: 3525689212556612810}
+    - targetCorrespondingSourceObject: {fileID: 3974784362447125391, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5528414945607081880}
     - targetCorrespondingSourceObject: {fileID: 7724415354141411433, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 958228257973486141}
@@ -156,6 +235,103 @@ SortingGroup:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!82 &5528414945607081880
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488490593157555961}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c82170e199289364c843cdab274eaf7d, type: 3}
+  m_Resource: {fileID: 8300000, guid: c82170e199289364c843cdab274eaf7d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5238752658297623839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7724415354141411433, guid: dc15e3502593f9b4396aaf0efd75bef3, type: 3}
