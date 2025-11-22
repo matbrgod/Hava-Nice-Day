@@ -200,5 +200,5 @@ MonoBehaviour:
   player: {fileID: 0}
   followSpeed: 4
   healthEnemy: 0
-  maxHealhtEnemy: 5
+  maxHealhtEnemy: 3
   timer1: 0
