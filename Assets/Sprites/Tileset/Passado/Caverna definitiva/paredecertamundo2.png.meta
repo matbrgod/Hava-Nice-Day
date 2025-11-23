@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 9cb1e1f548557de40aff5714dfeb2e47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8666223160600867972
+    second: paredecertamundo2_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: paredecertamundo2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484b0e78c0c944870800000000000000
+      internalID: 8666223160600867972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d77be59c3899144b792ae29ea2fddb
+      internalID: 537098011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c576dc2a07b1d14dbf78b4735d23b35
+      internalID: 381862694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f180835cfec220f4dbcf6624e4d49e13
+      internalID: 2052014195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52d47f0d51d6494a81240606fabf5de
+      internalID: 1270447805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8296ad0749214b448a74028317ae383b
+      internalID: 1765286917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5143a5fa0c107843bd48b401fd05834
+      internalID: 1903490814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_7
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e79bbe105e6df42a31f7d2ea69905f
+      internalID: 1913453529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd8860b355001749841d0bc1617a792
+      internalID: 2035713430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12a319f71676d74c90d9431d43b087a
+      internalID: 778232842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98fbb8bf784aa04db989e7464f4173a
+      internalID: 1293537937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b6bb00e2f3f714381a7413b8d0384f
+      internalID: 803269187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6810036e43831428717b7f897ee3d0
+      internalID: 1326265968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_13
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadb01cb1f6b8c944ba3d49a7d9f7365
+      internalID: -1637705362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eda1393c59a4b344b0d0df9ac7a08f8
+      internalID: -1945115163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_15
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b9bc9e84a47ba44af666cc01801b82
+      internalID: -1421938296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c6415d6dae1cf4480e0d43bda8ce67
+      internalID: -849313161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1528346a7c0aa8418bbac16e5f1fdc2
+      internalID: 1344050992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1288193daae984da87544d0745f506
+      internalID: 639034276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb73a811512e8e48b28476e9f8726e5
+      internalID: 810764606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86831e535d26e645802d8928ec8c7d7
+      internalID: 240660028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65279f15e6014f6479a513c23fdea97c
+      internalID: 404286664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5349b7a1a76614f999253067a1053a
+      internalID: 685789421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_23
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e1bb16322e244489e8447c3e00bd64
+      internalID: -1035453344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37737e1fb1658e24982da9b8675201a1
+      internalID: -207182681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0046e3fcdd498464a8f2ae429f912631
+      internalID: 604138990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b16a732c4be2447aeb72b4dbf501c6
+      internalID: -1857035189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_27
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc61392b157a794085f23ba2521d27b
+      internalID: -187174018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_28
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4902726b4ef6e04396abb75b7aeab93
+      internalID: 414756643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_29
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d34b9c5d006d374291315e7e1b1208f
+      internalID: 380643953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_30
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb49b6e3800435644a3c7a4dc45e7ca7
+      internalID: -1200852177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_31
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e2152296606994ba9790ce286eb1d3
+      internalID: -956220179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8f655a05d75be4c8085bc310784b27
+      internalID: -418967021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e15e72dbcf1404c91a02626611b03a
+      internalID: 185728401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f2f2d42d58aa2438b047c9af39294f
+      internalID: -1784714350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f56f9b3357db164b8825ca4637e81fa
+      internalID: -1881221049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_36
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64805144af77e304d85d4ff14d6d8bf5
+      internalID: -835136767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8ad71c04467774fb4d04e1b9b703b7
+      internalID: -1990959933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5562242775b41e847a053cce1872771a
+      internalID: -2008197036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_39
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740dcff02e6b7f642a1cc84753125089
+      internalID: -457547410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_40
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 81
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257b8af62030d994fa690368bb93e285
+      internalID: 356260416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_41
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 81
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfe8a9f4687d25478aa0a48a41252cd
+      internalID: -1526592034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_42
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 81
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35572c8c2cfc484db299d259bcb58e7
+      internalID: 1475679547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 81
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5337613c8c1a8c547b101cd1cc0afe44
+      internalID: -19992154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_44
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 81
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78748a23406da6b4699cadc523f07648
+      internalID: 1359217331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_45
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def91564f9ba3e1478a8fa8f731e1063
+      internalID: -1185618062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_46
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b7d81b97d76b644b54531724f85670
+      internalID: 1936872397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_47
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa97b255915b1ad4ea441d1085b36728
+      internalID: 1394969797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b047a01e99c9741a9d3b1e3f57606e
+      internalID: 1349901987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_49
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 17
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510db00e08c12ae44bc3fe79e308c46c
+      internalID: -949040277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 17
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058faa482889c06459ddc990996a90ae
+      internalID: -723618582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_51
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 17
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e12aa21b7941744b17bb3ab4039365
+      internalID: -1163458084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredecertamundo2_52
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 17
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4974403d980954eb1559f68cecd8a1
+      internalID: -1226661408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d417a782ae19d384890d43f4b59d5cc1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      paredecertamundo2_0: 8666223160600867972
+      paredecertamundo2_1: 537098011
+      paredecertamundo2_10: 1293537937
+      paredecertamundo2_11: 803269187
+      paredecertamundo2_12: 1326265968
+      paredecertamundo2_13: -1637705362
+      paredecertamundo2_14: -1945115163
+      paredecertamundo2_15: -1421938296
+      paredecertamundo2_16: -849313161
+      paredecertamundo2_17: 1344050992
+      paredecertamundo2_18: 639034276
+      paredecertamundo2_19: 810764606
+      paredecertamundo2_2: 381862694
+      paredecertamundo2_20: 240660028
+      paredecertamundo2_21: 404286664
+      paredecertamundo2_22: 685789421
+      paredecertamundo2_23: -1035453344
+      paredecertamundo2_24: -207182681
+      paredecertamundo2_25: 604138990
+      paredecertamundo2_26: -1857035189
+      paredecertamundo2_27: -187174018
+      paredecertamundo2_28: 414756643
+      paredecertamundo2_29: 380643953
+      paredecertamundo2_3: 2052014195
+      paredecertamundo2_30: -1200852177
+      paredecertamundo2_31: -956220179
+      paredecertamundo2_32: -418967021
+      paredecertamundo2_33: 185728401
+      paredecertamundo2_34: -1784714350
+      paredecertamundo2_35: -1881221049
+      paredecertamundo2_36: -835136767
+      paredecertamundo2_37: -1990959933
+      paredecertamundo2_38: -2008197036
+      paredecertamundo2_39: -457547410
+      paredecertamundo2_4: 1270447805
+      paredecertamundo2_40: 356260416
+      paredecertamundo2_41: -1526592034
+      paredecertamundo2_42: 1475679547
+      paredecertamundo2_43: -19992154
+      paredecertamundo2_44: 1359217331
+      paredecertamundo2_45: -1185618062
+      paredecertamundo2_46: 1936872397
+      paredecertamundo2_47: 1394969797
+      paredecertamundo2_48: 1349901987
+      paredecertamundo2_49: -949040277
+      paredecertamundo2_5: 1765286917
+      paredecertamundo2_50: -723618582
+      paredecertamundo2_51: -1163458084
+      paredecertamundo2_52: -1226661408
+      paredecertamundo2_6: 1903490814
+      paredecertamundo2_7: 1913453529
+      paredecertamundo2_8: 2035713430
+      paredecertamundo2_9: 778232842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
