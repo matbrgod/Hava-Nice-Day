@@ -168,6 +168,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5150039893326068544, guid: 80b41ab480e063040a976f86f32c6c88, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 447b7352e8dd9014b80a83799ffc1dd8, type: 3}
+    - target: {fileID: 5150039893326068544, guid: 80b41ab480e063040a976f86f32c6c88, type: 3}
       propertyPath: 'm_DirectAudioVolumes.Array.data[0]'
       value: 0.305
       objectReference: {fileID: 0}
@@ -1122,7 +1126,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122404628}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 64775a07994d5ea4d8238174ec91c141, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 447b7352e8dd9014b80a83799ffc1dd8, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
