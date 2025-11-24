@@ -34,7 +34,7 @@ public class questPonte : MonoBehaviour
     {
         ProcurarItemNoInventario();
 
-        if (item.quantity >= 30)
+        if (item != null && item.quantity >= 30)
         {
             if (quest3 != null)
                 quest3.SetActive(false);
@@ -43,7 +43,7 @@ public class questPonte : MonoBehaviour
                 quest4.SetActive(true);
         }
 
-        if (item.quantity >= 30 && canCraft == true && player.interact)
+        if ((item != null && item.quantity >= 30 && canCraft == true && player.interact))
         {
             if (colisorTemporario != null)
                 colisorTemporario.SetActive(false);
@@ -51,7 +51,7 @@ public class questPonte : MonoBehaviour
             if (quest4 != null)
                 quest4.SetActive(false);
 
-            item.quantity -= 40;
+            item.quantity -= 30;
             //slot.UpdateSlotUI();
             torre.SetActive(true);
             if (quest5 != null)
