@@ -53,6 +53,11 @@ public class InventoryController : MonoBehaviour
         TryInitializeSlots();
     }
 
+    private void Update()
+    {
+        TryInitializeSlots();
+    }
+
     private void OnDestroy()
     {
         if (instance == this)
