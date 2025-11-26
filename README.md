@@ -23,5 +23,6 @@ milestone 02 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/mai
 milestone 03 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/main/doc/milestone03_niveis.md"> Três níveis temáticos interconectados </a> <br>
 milestone 04 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/main/doc/milestone04_boss.md"> Boss, estrutura de esqueleto, menu, intro e seleção </a> <br>
 milestone 05 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/main/doc/milestone05_testes.md"> Testes de gameplay, ajustes de design </a> <br>
-milestone 06 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/main/doc/milestone06_final.md"> Versão final + publicação no Itch.io </a>
+milestone 06 - <a href="https://github.com/matbrgod/Prot-tipo-dos-crias/blob/main/doc/milestone06_final.md"> Versão final + publicação no Itch.io </a> <br>
+milestone 07 - <a href="https://github.com/matbrgod/Hava-Nice-Day/blob/main/doc/milestone07_final.md"> Divulgação e meta de 100 downloads </a>
 
