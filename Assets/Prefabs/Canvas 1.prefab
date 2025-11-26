@@ -1192,10 +1192,10 @@ PrefabInstance:
     - target: {fileID: 5220961747874398555, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 12800000, guid: 541112b0d9b5aae45895a95545a43b19, type: 3}
     - target: {fileID: 5220961747874398555, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5220961747874398555, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -1208,6 +1208,10 @@ PrefabInstance:
     - target: {fileID: 5220961747874398555, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
       propertyPath: m_FontData.m_RichText
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220961747874398555, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5886495346736399880, guid: 6a2a794a190757e4fa61b52c41c55568, type: 3}
       propertyPath: m_Color.b
