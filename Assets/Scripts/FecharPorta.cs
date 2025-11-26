@@ -22,7 +22,7 @@ public class FecharPorta : MonoBehaviour
             MusicManager.Instance.PlayMusic("MiniBoss");
             //musicaAmbiente.Stop();
             
-            Object.Destroy(this.gameObject);
+            //Object.Destroy(this.gameObject);
         }
                    
     }

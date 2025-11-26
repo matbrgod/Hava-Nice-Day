@@ -132,8 +132,11 @@ MonoBehaviour:
   speed: 4
   player: {fileID: 0}
   distanceBetween: 15
+  enemyAnimator: {fileID: 0}
   tempoDeESpera: 2
+  walkThreshold: 0.05
   PatrolPoints: []
+  sangue: {fileID: 4897215281484936675, guid: 77d731ffc0fe3e24789893ccd9195464, type: 3}
 --- !u!61 &1036273093148684099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -285,7 +288,7 @@ NavMeshAgent:
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5

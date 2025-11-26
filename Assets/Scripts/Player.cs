@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public float timerTiro = 0f;
     public float tiroCooldown = 1f;
  
-    Vector2 moveDirection;
+    public Vector2 moveDirection;
 
     Vector2 mousePosition;
     public WeaponParent WeaponParent;
@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     //Som de Caminhada
     [SerializeField] private AudioSource caminhada;
 
+    
     void Awake()
     {
         if (instance != null)
@@ -82,13 +83,14 @@ public class Player : MonoBehaviour
 
         if (moveX != 0 || moveY != 0)
         {
+            caminhada.enabled = true;
             animator.SetBool("EstaAndando", true);
-            //tocar som de caminhada 1 vez
-            //StartCoroutine(PlayAudioAndContinue());
         }
         else
+        {
+            caminhada.enabled = false;
             animator.SetBool("EstaAndando", false);
-
+        }
         if (healthPlayer <= 0)
         {
             SceneManager.LoadScene("Game Over");
@@ -141,7 +143,8 @@ public class Player : MonoBehaviour
                 if (collision.collider.CompareTag("Enemy"))
                 {
                     healthPlayer -= 10; // Diminui 10 de vida
-                    SpawnParticlesSangue();
+                    SoundManager.Instance.PlaySound2D("HavaHit");
+                    sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
                     healthText.text = "" + healthPlayer;
                     
                     
@@ -173,7 +176,6 @@ public class Player : MonoBehaviour
             }
             triggerTickTimer = 0f;
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -213,12 +215,6 @@ public class Player : MonoBehaviour
         if (spriteRenderer != null) spriteRenderer.color = Color.white;
     }
 
-    /*private IEnumerator EfeitoTiroCoroutine()
-    {
-        yield return new WaitForSeconds(0.2f);
-        efeitoTiro.SetActive(false);
-    }*/
-
     private void OnDisable()
     {
         int enemyLayer = LayerMask.NameToLayer("Enemy");
@@ -247,12 +243,5 @@ public class Player : MonoBehaviour
         //Vector2 aimDirection = mousePosition - rb.position;
         //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         // rb.rotation = aimAngle;
-       
-
-    }
-
-    void SpawnParticlesSangue()
-    {
-        sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
     }
 }

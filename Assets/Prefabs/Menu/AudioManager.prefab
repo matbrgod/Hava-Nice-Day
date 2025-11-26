@@ -41,7 +41,7 @@ AudioSource:
   m_GameObject: {fileID: 6828887346205801645}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7791071356489104944, guid: fcf0b12101f27b448b430da9e253cff6, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 5327788985294859724}
   - component: {fileID: 853773706982121463}
   - component: {fileID: 9174764024465420534}
+  - component: {fileID: 7322168876984958960}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -205,6 +206,27 @@ MonoBehaviour:
   - groupID: Picaretada
     clips:
     - {fileID: 8300000, guid: 97a0ffd13af804642973356a5f3ce6dd, type: 3}
+  - groupID: HavaHit
+    clips:
+    - {fileID: 8300000, guid: b1903be3c07bf92419af92e52eab5c96, type: 3}
+    - {fileID: 8300000, guid: 190d061be869a0848957d2932640d215, type: 3}
+    - {fileID: 8300000, guid: 4dd9acee0579b5144a9f68ce2be00342, type: 3}
+    - {fileID: 8300000, guid: d479ebb52c4efdb429d47bbc411efc89, type: 3}
+    - {fileID: 8300000, guid: 3fc7e1f4186fef848a2ab2078c51af85, type: 3}
+    - {fileID: 8300000, guid: 6cbdc463b007e384eb655effd894fed7, type: 3}
+    - {fileID: 8300000, guid: 9074c5d4598d3b94d8bfd9a2d432fff4, type: 3}
+    - {fileID: 8300000, guid: 0e463a4e5873049459aea88e6e4dcf15, type: 3}
+    - {fileID: 8300000, guid: e93bb0dde72a7d34da4dc401991717a0, type: 3}
+  - groupID: MonstroGrito
+    clips:
+    - {fileID: 8300000, guid: a24b0464509ebc843a76105a2ab11e40, type: 3}
+  - groupID: MonstroDor
+    clips:
+    - {fileID: 8300000, guid: 5bff7eac093d8fc41870585ed2de2d06, type: 3}
+    - {fileID: 8300000, guid: dd13726d00c3f8c479babbdee2052016, type: 3}
+    - {fileID: 8300000, guid: b43eb0021bc8512469696126af94ce64, type: 3}
+    - {fileID: 8300000, guid: 3e9e967a120cea14daa2751bb0ef85c9, type: 3}
+    - {fileID: 8300000, guid: 220be044f50ba9a4aa7e754f414528a6, type: 3}
 --- !u!114 &5327788985294859724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +290,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicLibrary: {fileID: 853773706982121463}
   musicSource: {fileID: 8650680855107209596}
+--- !u!114 &7322168876984958960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140457764944024953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e89e77f8939134bab470ff36c1873f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: fcf0b12101f27b448b430da9e253cff6, type: 2}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
 --- !u!1 &8279133615896125156
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +346,7 @@ AudioSource:
   m_GameObject: {fileID: 8279133615896125156}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7543109817888816038, guid: fcf0b12101f27b448b430da9e253cff6, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0

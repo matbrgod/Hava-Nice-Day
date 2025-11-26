@@ -200,10 +200,10 @@ public class EnemyAtirador : MonoBehaviour
         sangueParticleSystemInstance = Instantiate(sangue, transform.position, Quaternion.identity);
     }
 
-    public void TakeDamage(/*float damage*/)
+    public void TakeDamage(int damage)
     {
-
-        healthEnemy -= /*damage*/1;
+        SoundManager.Instance.PlaySound3D("HavaHit", gameObject.transform.position);
+        healthEnemy = healthEnemy - damage;
         SpawnParticlesSangue();
         if (healthEnemy <= 0)
         {
@@ -215,13 +215,13 @@ public class EnemyAtirador : MonoBehaviour
     {
         if (collision.collider.CompareTag("Bullet"))// | collision.collider.CompareTag("Enemy"))
         {
-            TakeDamage();
+            TakeDamage(1);
         }
     }
     
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") | collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Player") | collision.CompareTag("Bullet") | collision.CompareTag("Lanterna"))
         {
             detectado = true;
             arma.SetActive(true);

@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthEnemy: 0
-  maxHealthEnemy: 3
+  maxHealthEnemy: 2
   distanciaParaAtacar: 5
   tempoEntreTiros: 2
   projetilPrefab: {fileID: 1320350450539152995, guid: 2fe10c1f6e3ba4843b6fd47ce1fa18bd, type: 3}

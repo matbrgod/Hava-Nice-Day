@@ -12,6 +12,9 @@ TagManager:
   - rato
   - fio
   - Item
+  - Boss
+  - Lanterna
+  - AreaSegura
   layers:
   - Default
   - TransparentFX
@@ -23,7 +26,7 @@ TagManager:
   - Enemy
   - Melee
   - Boss
-  - 
+  - Veneno
   - 
   - 
   - 
