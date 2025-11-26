@@ -113,7 +113,7 @@ public class NpcDialogue : MonoBehaviour
             hudVida.SetActive(false);
 
             if (questOffHud != null)
-                questOffHud.SetActive(false);
+                Destroy(questOffHud);
             
             var player = FindObjectOfType<Player>();
             if (player != null) player.canAttack = false;
